@@ -27,7 +27,7 @@ public class PaxNumberTest {
 		Assert.assertTrue(page.getDriver().findElement(By.id("divpaxOptions")).getCssValue("display").equals("block"));
 		
   }
-	
+
 //	@Test(dependsOnMethods = "paxDropDown")
 	public void adultDropDown() {
 		
@@ -35,7 +35,10 @@ public class PaxNumberTest {
 		Assert.assertTrue(page.getDriver().findElement(By.xpath("//div[contains(@id, 'divpaxinfo')]")).getText().contains("7 Adult"));
 	}
 	
-	
+	@Test 
+	public void gitchange() {
+		System.out.println("Hi it is succesfull");
+	}
 //	@Test(dependsOnMethods = "paxDropDown")
 	public void childDropDown() {
 		
